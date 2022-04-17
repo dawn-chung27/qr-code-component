@@ -5,29 +5,50 @@
 
 .componentA {
   display: flex;
-  border: solid red 4px;
-  margin: 10%;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  background-color: hsl(213, 100%, 95%);
+   box-shadow: 5px 5px 5px rbga(0,0,0,0.7);
 }
 
 .componentB {
-  border: solid greenyellow 4px;
-  margin: 4%;
+  background-color: aliceblue;
+  width: 220px;
+  margin: 9%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding-top: 2%;
+  border-radius: 15px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 #qr-code {
-  width: 40%;
-  height: 40%;
+  width: 200px;
+  border-radius: 10px;
 }
 
 .textA {
-  width: 40%;
+  width: 200px;
+  font-family: 'Outfit';
+  text-align: center;
+  font-size: 100%;
+  font-weight: 700;
+  margin-bottom: -3px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .textB {
-  width: 40%;
+  width: 180px;
+  font-family: 'Outfit';
+  text-align: center;
+  font-size: 70%;
+  font-weight: 400;  
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  color: rgb(147, 147, 147);
 }
