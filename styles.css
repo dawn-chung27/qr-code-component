@@ -1,54 +1,68 @@
-/* .container {
-  border: solid rebeccapurple 4px;
-
-} */
-
-.componentA {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 10%;
-  background-color: hsl(213, 100%, 95%);
-   box-shadow: 5px 5px 5px rbga(0,0,0,0.7);
+body {
+    background-color: hsl(210, 60%, 98%);
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: row;        /* Stack children vertically */
+    justify-content: center;       /* Center card vertically */
+    align-items: center;
 }
 
-.componentB {
-  background-color: aliceblue;
-  width: 220px;
-  margin: 9%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-top: 2%;
-  border-radius: 15px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+/* Card layout container */
+main.card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 90%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-#qr-code {
-  width: 200px;
-  border-radius: 10px;
+/* Updated figure class (corrected and centered) */
+figure.image-container {
+    margin: 0;
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.textA {
-  width: 200px;
-  font-family: 'Outfit';
-  text-align: center;
-  font-size: 100%;
-  font-weight: 700;
-  margin-bottom: -3px;
-  padding-left: 5px;
-  padding-right: 5px;
+/* Responsive centered image */
+figure.image-container img.qr-image {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    object-fit: contain;
 }
-.textB {
-  width: 180px;
-  font-family: 'Outfit';
-  text-align: center;
-  font-size: 70%;
-  font-weight: 400;  
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-bottom: 15px;
-  color: rgb(147, 147, 147);
+
+h1.title {
+    font-size: 1.15rem;
+    max-width: 250px;
+    color: hsl(218, 44%, 22%);
+    margin: 20px 0 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+}
+
+p.description {
+    font-size: 0.875rem;
+    max-width: 230px;
+    color: hsl(220, 15%, 55%);
+    margin-bottom: 20px;
+}
+
+/* Footer below the card */
+footer.footer {
+    text-align: center;
+    font-size: 0.8rem;
+    color: hsl(220, 15%, 50%);
 }
